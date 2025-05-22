@@ -1,0 +1,330 @@
+@font-face {
+  font-family: "Unilever Shilling";
+  src: url("https://db.onlinewebfonts.com/t/e9bf552d2dfd4e9893549776a564fa17.eot");
+  src: url("https://db.onlinewebfonts.com/t/e9bf552d2dfd4e9893549776a564fa17.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/e9bf552d2dfd4e9893549776a564fa17.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/e9bf552d2dfd4e9893549776a564fa17.woff") format("woff"), url("https://db.onlinewebfonts.com/t/e9bf552d2dfd4e9893549776a564fa17.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/e9bf552d2dfd4e9893549776a564fa17.svg#Unilever Shilling") format("svg");
+}
+
+@import url(https://db.onlinewebfonts.com/c/b2f90b602a9f5c2da56ad4ff3074c9ca?family=Intro);
+@font-face {
+  font-family: "Intro Black";
+  src: url("./fonts/IntroBlackAlt.otf");
+}
+@font-face {
+  font-family: "Unilever Regular";
+  src: url("./fonts/UnileverShilling.woff2");
+}
+@font-face {
+  font-family: "Intro Regular";
+  src: url("./fonts/IntroRegularAlt.otf.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Unilever Shilling", sans-serif;
+  background: linear-gradient(180deg, #0c3ade -34.79%, #3ea6ff 117.05%);
+  display: flex;
+  justify-content: center;
+  min-height: 100dvh;
+  overflow-y: auto;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3 {
+  font-family: "Intro", sans-serif;
+}
+span {
+  display: inline-block;
+}
+
+.container {
+  padding-inline: 24px;
+  margin-inline: auto;
+  width: 450px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.top-section {
+  text-align: center;
+  z-index: 1;
+  img.logo {
+    max-width: 290px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .yellow-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+.top-section2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 10px;
+  .left-text {
+    font-family: "Unilever Regular", sans-serif;
+    color: white;
+    font-weight: normal;
+    img {
+      margin-right: 4px;
+    }
+  }
+}
+.description {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  margin-top: 40px;
+  font-family: "Intro Black", sans-serif;
+  span {
+    font-family: "Unilever Shilling", sans-serif;
+    font-weight: 400;
+  }
+}
+.description strong {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.description2 {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  font-family: "Intro Regular", sans-serif;
+  margin-top: 40px;
+  strong,
+  a,
+  span {
+    font-family: "Intro Black", sans-serif;
+    font-family: "Unilever Shilling", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: inline-block;
+    color: inherit;
+  }
+}
+.buttons {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+.buttons button {
+  font-family: "Intro Black", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  height: 48px;
+  width: 100%;
+  transition: all 0.3s ease;
+  span {
+    font-family: "Unilever Shilling", sans-serif;
+    font-size: 14px;
+  }
+}
+.start-btn {
+  background-color: #2729a3;
+  color: white;
+  &:hover {
+    background-color: #0c3ade;
+  }
+}
+.location-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white !important;
+  &.two {
+    height: 40px;
+    font-size: 14px;
+  }
+  &:hover {
+    background-color: #0c3ade;
+    border-color: #0c3ade !important;
+  }
+}
+.image-section {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+  border-bottom: 1px solid #ffffff4d;
+  margin-inline: -24px;
+  img {
+    margin-bottom: -4px;
+    max-width: 100%;
+  }
+}
+.accordion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 0.875rem 1rem;
+  font-size: 16px;
+  border-top: 1px solid #ffffff;
+  cursor: pointer;
+  font-family: "Intro Black", sans-serif;
+  &:last-child {
+    margin-bottom: 32px;
+  }
+}
+
+.file-up-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.steps {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 24px;
+  margin-top: 40px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #ffffff4d;
+  li {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      font-family: "Intro", sans-serif;
+      color: white;
+      line-height: 1;
+      margin-top: 8px;
+    }
+  }
+}
+.half-grid {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+}
+.form-group {
+  margin-bottom: 8px;
+}
+.form-control {
+  border: 1px solid #ffffff4d;
+  border-radius: 50px;
+  color: white;
+  height: 48px;
+  text-align: center;
+  background-color: transparent;
+  width: 100%;
+  font-family: "Unilever Shilling", sans-serif;
+  &::placeholder {
+    color: white;
+    opacity: 1; /* For Firefox */
+  }
+
+  &::-webkit-input-placeholder {
+    color: white;
+  }
+
+  &:-ms-input-placeholder {
+    color: white;
+  }
+
+  &::-ms-input-placeholder {
+    color: white;
+  }
+
+  &:focus {
+    outline-color: white;
+    outline-width: 0px;
+    outline-offset: 1px;
+  }
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  .custom-checkbox {
+    position: relative;
+    padding-left: 36px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1.5;
+    user-select: none;
+    display: block;
+  }
+
+  .custom-checkbox {
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  .custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+
+  .custom-checkbox input:checked ~ .checkmark {
+    background-color: #27348b;
+    border-color: #27348b;
+  }
+
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .custom-checkbox input:checked ~ .checkmark::after {
+    display: block;
+  }
+
+  .custom-checkbox .checkmark::after {
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}
