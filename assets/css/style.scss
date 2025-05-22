@@ -171,9 +171,16 @@ span {
   text-align: center;
   border-bottom: 1px solid #ffffff4d;
   margin-inline: -24px;
+  position: relative;
   img {
     margin-bottom: -4px;
     max-width: 100%;
+  }
+  .man {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 .accordion {

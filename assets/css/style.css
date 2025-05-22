@@ -181,10 +181,17 @@ span {
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3019607843);
   margin-inline: -24px;
+  position: relative;
 }
 .image-section img {
   margin-bottom: -4px;
   max-width: 100%;
+}
+.image-section .man {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .accordion {
